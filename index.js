@@ -1,5 +1,5 @@
-const binarySearchFunc = require('./algorithms/search/BinarySearch');
+const binarySearch = require('./algorithms/search/BinarySearch');
 
 module.exports = {
-  bsearch: binarySearchFunc;
-}
+  binarySearch,
+};

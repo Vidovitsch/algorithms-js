@@ -12,14 +12,14 @@
 module.exports = (arr, elem) => {
   let min = 0;
   let max = arr.length - 1;
-  let guess;
+  let i;
   while (min <= max) {
-    guess = Math.floor((max + min) / 2);
-    if (arr[guess] === elem) return guess;
-    if (arr[guess] < elem) {
-      min = guess + 1;
+    i = Math.floor((max + min) / 2);
+    if (arr[i] === elem) return i;
+    if (arr[i] < elem) {
+      min = i + 1;
     } else {
-      max = guess - 1;
+      max = i - 1;
     }
   }
   return -1;

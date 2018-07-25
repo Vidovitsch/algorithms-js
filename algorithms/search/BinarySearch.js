@@ -3,7 +3,6 @@
  * Returns -1 if the element doesn't exist within the array.
  *
  * Time complexity (worst/average): O(log(n))
- * Space complexity (worst): O(1)
  *
  * @param  {Array} arr  sorted Array (unsorted arrays give a undefined result)
  * @param  {Any} elem element to perform the search on

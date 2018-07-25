@@ -9,6 +9,7 @@ describe('BinarySearch', () => {
     let arr = [-10, -5, 0, 5, 10];
     let elem = arr[i];
     assert.equal(binarySearch(arr, elem), i);
+
     // Even length
     arr = [-10, -5, 0, 5, 10, 20];
     elem = arr[i];
@@ -18,9 +19,11 @@ describe('BinarySearch', () => {
   it('binary search should return -1 if the element does not exist in the array', () => {
     const elem = 15;
     const i = -1;
+
     // Odd length
     let arr = [-10, -5, 0, 5, 10];
     assert.equal(binarySearch(arr, elem), i);
+
     // Even length
     arr = [-10, -5, 0, 5, 10, 20];
     assert.equal(binarySearch(arr, elem), i);

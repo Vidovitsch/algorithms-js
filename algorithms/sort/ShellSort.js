@@ -1,11 +1,10 @@
 const compare = require('./../../util/Compare');
-const swap = require('./../../util/Swap');
 
 /**
  * Orders an array by value or by the rules defined in a given custom comparator function.
  * The shell sort uses increments of '3 * x + 1'.
  *
- * Time complexity (worst): O(n(log(n))^2)
+ * Time complexity (worst): O(n * (log(n))^2)
  *
  * @param  {Any[]} arr        array to be sorted
  * @param  {Function} comparator (optional) custom comparator that defines the sorting

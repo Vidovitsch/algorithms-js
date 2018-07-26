@@ -5,7 +5,7 @@ const swap = require('./../../util/Swap');
  * Orders an array by value or by the rules defined in a given custom comparator function.
  *
  * Time complexity (worst): O(n^2)
- *
+ * 
  * @param  {Any[]} arr        array to be sorted
  * @param  {Function} comparator (optional) custom comparator that defines the sorting
  */

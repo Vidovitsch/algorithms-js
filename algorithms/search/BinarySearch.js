@@ -1,3 +1,5 @@
+const compare = require('./../../util/Compare');
+
 /**
  * Searches and returns the index of the given element.
  * Returns -1 if the element doesn't exist within the array.
@@ -8,14 +10,14 @@
  * @param  {Any} elem element to perform the search on
  * @return {Integer}      index corresponding with the given element, or -1 if element isn't found
  */
-module.exports = (arr, elem) => {
+module.exports = (arr, elem, comparator) => {
   let min = 0;
   let max = arr.length - 1;
   let i;
   while (min <= max) {
     i = Math.floor((max + min) / 2);
-    if (arr[i] === elem) return i;
-    if (arr[i] < elem) {
+    if (compare(arr[i], elem, comparator) === 0) return i;
+    if (compare(arr[i], elem, comparator) === -1) {
       min = i + 1;
     } else {
       max = i - 1;

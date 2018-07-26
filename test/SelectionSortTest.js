@@ -2,7 +2,7 @@ const { assert } = require('chai');
 const { selectionSort } = require('../index');
 
 describe('SelectionSort', () => {
-  it("selection sort should throw an error when the custom comparator doesn't return 1-, 1, or 0", () => {
+  it("selection sort should throw an error when the custom comparator doesn't return -1, 1, or 0", () => {
     function zeroComp(a, b) { return 0; }
     function negativeComp(a, b) { return -1; }
     function positiveComp(a, b) { return 1; }

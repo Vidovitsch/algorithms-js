@@ -26,7 +26,7 @@ describe('BinarySearch', () => {
     assert.throws(() => { selectionSort(arr, wrongPositiveComp); }, Error);
   });
 
-  it("selection sort should, with a comparator, sort an array in a defined order", () => {
+  it("binary search should, with a comparator, find a element in an array", () => {
     const i = 4;
 
     function comparator(a, b) {

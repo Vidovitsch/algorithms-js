@@ -4,6 +4,7 @@ const insertionSort = require('./algorithms/sort/InsertionSort');
 const shellSort = require('./algorithms/sort/ShellSort');
 const shuffle = require('./algorithms/sort/Shuffle');
 const mergeSort = require('./algorithms/sort/MergeSort');
+const quickSort = require('./algorithms/sort/QuickSort');
 
 module.exports = {
   binarySearch,
@@ -12,4 +13,5 @@ module.exports = {
   shellSort,
   shuffle,
   mergeSort,
+  quickSort,
 };

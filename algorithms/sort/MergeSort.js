@@ -55,7 +55,7 @@ function sort(arr, copy, low, high, comparator) {
 }
 
 /**
- * Abstraction method of the merge sorted.
+ * Abstraction method of the merge sort.
  *
  * @param  {Any[]} arr        array to be sorted
  * @param  {Any[]} comparator (optional) custom comparator that defines the sorting

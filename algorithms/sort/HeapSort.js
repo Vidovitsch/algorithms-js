@@ -29,7 +29,6 @@ module.exports = (arr, comparator) => {
   let start = Math.floor((n - 2) / 2);
   let end = n - 1;
 	while (start >= 0) sink(arr, start--, end, comparator);
-  console.log(arr);
   while (end > 0) {
 		swap(arr, end--, 0);
 		sink(arr, 0, end, comparator);

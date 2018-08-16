@@ -1,51 +1,45 @@
 /**
- * DFS container.
+ * BFS container.
  *
  * @param       {Graph} graph graph to search
  * @param       {Any} source vertex to search from
  * @constructor
  */
-function DepthFirstObj(graph, source) {
+function BreadthFirstObj(graph, source) {
   this.source = source;
   this.graph = graph;
   this.marked = {};
   this.edgeTo = {};
-  this.DFS(source);
+  this.BFS(source);
 }
 
-/**
- * Recusively processes the graph.
- *
- * @param       {Graph} graph  graph to be processed
- * @param       {Any} source vertex to search from
- * @param       {Object} marked collection of vertices that have been visited while searching
- * @param       {Object} edgeTo collection of the path that each vertex got accessed by while searching
- * @constructor
- */
-function _DFS(graph, source, marked, edgeTo) {
-  marked[source] = true;
-  graph.adj(source).forEach((adj) => {
-    if (!marked[adj]) {
-      _DFS(graph, adj, marked, edgeTo);
-      edgeTo[adj] = source;
-    }
-  });
-}
-
-const D = DepthFirstObj.prototype;
+const B = BreadthFirstObj.prototype;
 
 /**
- * Processes the graph with a depth first search.
+ * Processes the graph with a breadth first search.
  *
  * @param       {Any} source vertex to search from
  * @constructor
  */
-D.DFS = function DFS(source) {
+B.BFS = function BFS(source) {
   // Reset properties for source change
   this.source = source;
   this.marked = {};
   this.edgeTo = {};
-  _DFS(this.graph, this.source, this.marked, this.edgeTo);
+
+  const queue = [];
+  queue.push(source);
+  this.marked[source] = true;
+  while (queue.length !== 0) {
+    let vertex = queue.shift();
+    this.graph.adj(vertex).forEach((adj) => {
+      if (!this.marked[adj]) {
+        queue.push(adj);
+        this.marked[adj] = true;
+        this.edgeTo[adj] = vertex;
+      }
+    });
+  }
 }
 
 /**
@@ -54,7 +48,7 @@ D.DFS = function DFS(source) {
  * @param  {Any}  v vertex
  * @return {Boolean}   true if connected, else false
  */
-D.hasPathTo = function hasPathTo(v) {
+B.hasPathTo = function hasPathTo(v) {
   return this.marked[v] ? true : false;
 }
 
@@ -65,7 +59,7 @@ D.hasPathTo = function hasPathTo(v) {
  * @param  {Any} v vertex
  * @return {Any[]}   List of vertices
  */
-D.pathTo = function pathTo(v) {
+B.pathTo = function pathTo(v) {
     const path = [];
     if (!this.hasPathTo(v)) return [];
     for (let i = v; i != this.source; i = this.edgeTo[i]) {
@@ -75,4 +69,4 @@ D.pathTo = function pathTo(v) {
     return path.reverse();
 }
 
-module.exports = DepthFirstObj;
+module.exports = BreadthFirstObj;

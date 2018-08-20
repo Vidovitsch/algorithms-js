@@ -7,6 +7,7 @@ const mergeSort = require('./algorithms/sort/MergeSort');
 const quickSort = require('./algorithms/sort/QuickSort');
 const heapSort = require('./algorithms/sort/HeapSort');
 const DFS = require('./algorithms/graph/DFS');
+const BFS = require('./algorithms/graph/BFS');
 
 module.exports = {
   binarySearch,
@@ -18,4 +19,5 @@ module.exports = {
   quickSort,
   heapSort,
   DFS,
+  BFS,
 };

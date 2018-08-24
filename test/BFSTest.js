@@ -2,7 +2,6 @@ const { assert } = require('chai');
 const { BFS } = require('../index');
 const Graph = require('../util/Graph');
 
-/* eslint-disable no-undef */
 describe('BreadthFirstSearch', () => {
   it("BFS object should process the graph at initiation)", () => {
     const source = 'A';
@@ -98,4 +97,3 @@ describe('BreadthFirstSearch', () => {
     assert.equal(bfs.edgeTo['B'], null);
   });
 });
-/* eslint-enable no-undef */

@@ -2,7 +2,6 @@ const { assert } = require('chai');
 const { DFS } = require('../index');
 const Graph = require('../util/Graph');
 
-/* eslint-disable no-undef */
 describe('DepthFirstSearch', () => {
   it("DFS object should process the graph at initiation)", () => {
     const source = 'A';
@@ -98,4 +97,3 @@ describe('DepthFirstSearch', () => {
     assert.equal(dfs.edgeTo['B'], null);
   });
 });
-/* eslint-enable no-undef */

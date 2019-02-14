@@ -1,0 +1,13 @@
+{
+    "extends": ["airbnb"],
+    "env": {
+        "node": true
+    },
+    "rules": {
+        "indent": ["error", 4]
+    },
+    "parserOptions": {
+        "ecmaVersion": 8,
+        "sourceType": "module"
+    }
+}

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "nyc mocha \"lib/algorithms/**/**/*.js\""
+    "test": "nyc mocha \"lib/algorithms/**/**/*.test.js\""
   },
   "repository": {
     "type": "git",

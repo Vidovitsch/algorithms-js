@@ -1,0 +1,15 @@
+{
+    "extends": ["airbnb"],
+    "env": {
+        "node": true
+    },
+    "rules": {
+        "indent": ["error", 4],
+        "no-restricted-globals": "off",
+        "no-param-reassign": "off"
+    },
+    "parserOptions": {
+        "ecmaVersion": 8,
+        "sourceType": "module"
+    }
+}

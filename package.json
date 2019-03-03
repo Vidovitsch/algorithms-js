@@ -1,5 +1,5 @@
 {
-  "name": "common-algorithms-js",
+  "name": "common-algorithms",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Vidovitsch/algorithms-js.git"
+    "url": "git+https://github.com/Vidovitsch/common-algorithms-js.git"
   },
   "author": "Vidovitsch",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Vidovitsch/algorithms-js/issues"
+    "url": "https://github.com/Vidovitsch/common-algorithms-js/issues"
   },
-  "homepage": "https://github.com/Vidovitsch/algorithms-js#readme",
+  "homepage": "https://github.com/Vidovitsch/common-algorithms-js#readme",
   "dependencies": {
     "chai": "^4.1.2",
     "mocha": "^5.2.0",

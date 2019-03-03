@@ -1,7 +1,7 @@
 {
   "name": "common-algorithms",
   "version": "1.0.0",
-  "description": "",
+  "description": "A npm module containing the common searching and sorting algorithms",
   "main": "index.js",
   "scripts": {
     "test": "nyc mocha \"lib/algorithms/**/**/*.test.js\""

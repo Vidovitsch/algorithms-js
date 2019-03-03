@@ -77,8 +77,8 @@ function SomeObj(value) {
 const arr = [new SomeObj(5), new SomeObj(-5), new SomeObj(-22), new SomeObj(108), new SomeObj(37)];
 
 quickSort(arr, (a, b) => {
-  if (a.value < b.value) { return -1; }
-  if (a.value > b.value) { return 1; }
+  if (a.value < b.value) return -1;
+  if (a.value > b.value) return 1;
   return 0;
 });
 ```

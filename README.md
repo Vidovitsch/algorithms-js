@@ -11,12 +11,14 @@ npm install --save common-algorithms
 
 ## Contents
 
-| Algorithms        | Type           | O (time)  | Θ (time) | Ω (time) | O (space)
-|:-------------:|:-------------:|:-----:|:-----:|:-----:|:-----:|
-|Selection Sort|Sort|n<sup>2</sup>|n<sup>2</sup>|n<sup>2</sup>|1|
-|Insertion Sort|Sort|n<sup>2</sup>|n<sup>2</sup>|n|1|
-|Quick Sort|Sort|n<sup>2</sup>|n * log<sub>2</sub>(n)|n * log<sub>2</sub>(n)|log<sub>2</sub>(n)|
-|Merge Sort|Sort|n * log<sub>2</sub>(n)|n * log<sub>2</sub>(n)|n * log<sub>2</sub>(n)|n|
-|Heap Sort|Sort|n * log<sub>2</sub>(n)|n * log<sub>2</sub>(n)|n * log<sub>2</sub>(n)|1|
-|Shell Sort|Sort|n * log<sub>2</sub>(n)<sup>2</sup>|n * log<sub>2</sub>(n)<sup>2</sup>|n * log<sub>2</sub>(n)|1|
+|Algorithms            |Type  |O (time)                          |Θ (time)                          |Ω (time)              |O (space)         |
+|:--------------------:|:----:|:--------------------------------:|:--------------------------------:|:--------------------:|:----------------:|
+|Selection Sort        |Sort  |n<sup>2</sup>                     |n<sup>2</sup>                     |n<sup>2</sup>         |1                 |
+|Insertion Sort        |Sort  |n<sup>2</sup>                     |n<sup>2</sup>                     |n                     |1                 |
+|Quick Sort            |Sort  |n<sup>2</sup>                     |n * log<sub>2</sub>(n)            |n * log<sub>2</sub>(n)|log<sub>2</sub>(n)|
+|Merge Sort            |Sort  |n * log<sub>2</sub>(n)            |n * log<sub>2</sub>(n)            |n * log<sub>2</sub>(n)|n                 |
+|Heap Sort             |Sort  |n * log<sub>2</sub>(n)            |n * log<sub>2</sub>(n)            |n * log<sub>2</sub>(n)|1                 |
+|Shell Sort            |Sort  |n * log<sub>2</sub>(n)<sup>2</sup>|n * log<sub>2</sub>(n)<sup>2</sup>|n * log<sub>2</sub>(n)|1                 |
+|Shuffle (Fisher–Yates)|Sort  |n                                 |n                                 |n                     |1                 |
+|Binary Search         |Search|log<sub>2</sub>(n)                |log<sub>2</sub>(n)                |1                     |1                 |
 

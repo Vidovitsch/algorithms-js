@@ -1,6 +1,6 @@
 {
   "name": "common-algorithms",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A npm module containing the common searching and sorting algorithms",
   "main": "index.js",
   "scripts": {
@@ -16,12 +16,10 @@
     "url": "https://github.com/Vidovitsch/common-algorithms-js/issues"
   },
   "homepage": "https://github.com/Vidovitsch/common-algorithms-js#readme",
-  "dependencies": {
+  "devDependencies": {
     "chai": "^4.1.2",
     "mocha": "^5.2.0",
-    "nyc": "^13.3.0"
-  },
-  "devDependencies": {
+    "nyc": "^13.3.0",
     "eslint": "^5.13.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.16.0",
